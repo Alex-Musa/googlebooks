@@ -6,7 +6,7 @@ function BookSearch(props) {
     <div>
       <form className="book-search">
         <div className="form-group">
-          <label htmlFor="search-field">Book Search</label>
+          <label htmlFor="search-field">Search</label>
           <input
             onChange={props.onChange}
             name={props.name}

@@ -1,4 +1,3 @@
-// https://www.bennettnotes.com/bootstrap-navbar-collapse-reactjs/
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import "./style.css";
@@ -23,17 +22,17 @@ class Nav extends Component {
     return (
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark transparent-nav">
         <div className="container">
-          <a className="navbar-brand" href="/">booklooker</a>
+          <a className="navbar-brand" href="/">Google Books</a>
           <button onClick={this.toggleNavbar} className={`${classTwo}`} type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon" />
           </button>
           <div className={`${classOne}`} id="navbarResponsive">
             <ul className="navbar-nav ml-auto">
               <li className={ this.props.activePage === "search" ? "nav-item active" : "nav-item" }>
-                <Link className="nav-link" to="/search">Search</Link>
+                <Link className="nav-link" to="/search">Books Search</Link>
               </li>
               <li className={ this.props.activePage === "saved" ? "nav-item active" : "nav-item" }>
-                <Link className="nav-link" to="/saved">Saved</Link>
+                <Link className="nav-link" to="/saved">Books Saved</Link>
               </li>
             </ul>
           </div>
